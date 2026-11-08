@@ -106,3 +106,21 @@ export const formatCountdown = (msLeft: number): string => {
   const seconds = total % 60;
   return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 };
+
+/**
+ * Compact total-reading-time label for the shelf: "0M" under an hour, then
+ * "2H5M". `minutes` and `hours` force one unit ("125M", "2.1H"); `hidden`
+ * returns an empty string.
+ */
+export const formatReadingTime = (
+  seconds: number,
+  mode: 'auto' | 'minutes' | 'hours' | 'hidden' = 'auto',
+): string => {
+  if (mode === 'hidden') return '';
+  const total = Number.isFinite(seconds) && seconds > 0 ? Math.floor(seconds) : 0;
+  const totalMinutes = Math.floor(total / 60);
+  if (mode === 'minutes') return `${totalMinutes}M`;
+  if (mode === 'hours') return `${Math.round((total / 3600) * 10) / 10}H`;
+  const hours = Math.floor(totalMinutes / 60);
+  return hours > 0 ? `${hours}H${totalMinutes % 60}M` : `${totalMinutes}M`;
+};

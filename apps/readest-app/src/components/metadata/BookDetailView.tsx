@@ -33,6 +33,8 @@ import {
   getSeriesIndex,
 } from '@/utils/book';
 import { isFeedBook } from '@/services/rss/feedBookUrl';
+import { formatReadingTime } from '@/utils/time';
+import type { BookReadingStats } from '@/hooks/useBookReadingStats';
 import { saveSysSettings } from '@/helpers/settings';
 import BookCover from '@/components/BookCover';
 import BookCoverViewer, { useBookCoverViewer } from '@/components/BookCoverViewer';
@@ -43,6 +45,8 @@ interface BookDetailViewProps {
   book: Book;
   metadata: BookMetadata | null;
   fileSize: number | null;
+  /** Total reading time and pace for the Reading section; the section is hidden when unset. */
+  readingStats?: BookReadingStats | null;
   shareEnabled?: boolean;
   onEdit?: () => void;
   onDelete?: () => void;
@@ -63,6 +67,7 @@ const BookDetailView: React.FC<BookDetailViewProps> = ({
   book,
   metadata,
   fileSize,
+  readingStats,
   shareEnabled,
   onEdit,
   onDelete,
@@ -270,6 +275,39 @@ const BookDetailView: React.FC<BookDetailViewProps> = ({
       </div>
 
       <div className='text-base-content my-4'>
+        {readingStats && readingStats.seconds > 0 && (
+          <div className='metadata-reading'>
+            <div className='px-4 py-3'>
+              <span className='text-neutral-content/85 text-base font-semibold'>{_('Reading')}</span>
+            </div>
+            <div className='px-4 py-1 pb-4'>
+              <div className='grid grid-cols-2 gap-4 sm:grid-cols-3'>
+                <div className='overflow-hidden'>
+                  <span className='font-bold'>{_('Total reading time')}</span>
+                  <p className='text-neutral-content text-sm'>
+                    {formatReadingTime(readingStats.seconds, 'auto')}
+                  </p>
+                </div>
+                <div className='overflow-hidden pe-1 text-end sm:text-start'>
+                  <span className='font-bold'>{_('Pages per hour')}</span>
+                  <p className='text-neutral-content text-sm'>
+                    {readingStats.pagesPerHour !== null
+                      ? readingStats.pagesPerHour.toFixed(1)
+                      : '—'}
+                  </p>
+                </div>
+                <div className='overflow-hidden'>
+                  <span className='font-bold'>{_('Chapters per hour (est.)')}</span>
+                  <p className='text-neutral-content text-sm'>
+                    {readingStats.chaptersPerHour !== null
+                      ? readingStats.chaptersPerHour.toFixed(1)
+                      : '—'}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
         <div className='metadata-others'>
           <button
             className={clsx(

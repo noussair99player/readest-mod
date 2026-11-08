@@ -9,6 +9,7 @@ import { useTranslation } from '@/hooks/useTranslation';
 import {
   LibraryViewModeType,
   LibraryGroupByType,
+  LibraryReadingTimeDisplayType,
   LibrarySecondarySortByType,
   LibrarySortByType,
 } from '@/types/settings';
@@ -84,6 +85,13 @@ const ViewMenu: React.FC<ViewMenuProps> = ({ setIsDropdownOpen }) => {
     ...sortByOptions,
   ];
 
+  const readingTimeOptions: { label: string; value: LibraryReadingTimeDisplayType }[] = [
+    { label: _('Auto (0M, 1H5M)'), value: 'auto' },
+    { label: _('Minutes only'), value: 'minutes' },
+    { label: _('Hours only'), value: 'hours' },
+    { label: _('Hidden'), value: 'hidden' },
+  ];
+
   const sortingOptions = [
     { label: _('Ascending'), value: true },
     { label: _('Descending'), value: false },
@@ -139,6 +147,10 @@ const ViewMenu: React.FC<ViewMenuProps> = ({ setIsDropdownOpen }) => {
     const params = new URLSearchParams(window.location.search);
     params.set('order', value ? 'asc' : 'desc');
     navigateToLibrary(router, `${params.toString()}`);
+  };
+
+  const handleSetReadingTimeDisplay = async (value: LibraryReadingTimeDisplayType) => {
+    await saveSysSettings(envConfig, 'libraryReadingTimeDisplay', value);
   };
 
   const handleSetThenSortBy = async (value: LibrarySecondarySortByType) => {
@@ -299,6 +311,23 @@ const ViewMenu: React.FC<ViewMenuProps> = ({ setIsDropdownOpen }) => {
               ))}
             </>
           )}
+        </ul>
+      </MenuItem>
+
+      {/* Reading time under each cover - collapsible */}
+      <hr aria-hidden='true' className='border-base-200 my-1' />
+      <MenuItem label={_('Reading time...')} detailsOpen={false} buttonClass='py-1!'>
+        <ul className='ms-0 flex flex-col ps-0 before:hidden'>
+          {readingTimeOptions.map((option) => (
+            <MenuItem
+              key={option.value}
+              label={option.label}
+              buttonClass='min-h-8 py-1!'
+              toggled={(settings.libraryReadingTimeDisplay ?? 'auto') === option.value}
+              onClick={() => handleSetReadingTimeDisplay(option.value)}
+              transient
+            />
+          ))}
         </ul>
       </MenuItem>
     </Menu>

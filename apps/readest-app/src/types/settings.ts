@@ -42,6 +42,8 @@ export type LibrarySortByType = (typeof LibrarySortByType)[keyof typeof LibraryS
 export type LibrarySecondarySortByType = LibrarySortByType | 'none';
 
 export type LibraryCoverFitType = 'crop' | 'fit';
+/** How the total reading time under a book cover is shown: auto = 45M, then 2H5M. */
+export type LibraryReadingTimeDisplayType = 'auto' | 'minutes' | 'hours' | 'hidden';
 
 export const LibraryGroupByType = {
   None: 'none',
@@ -559,6 +561,7 @@ export interface SystemSettings {
   libraryThenSortAscending: boolean;
   libraryGroupBy: LibraryGroupByType;
   libraryCoverFit: LibraryCoverFitType;
+  libraryReadingTimeDisplay: LibraryReadingTimeDisplayType;
   libraryAutoColumns: boolean;
   libraryColumns: number;
   librarySkeuomorphicCovers: boolean;

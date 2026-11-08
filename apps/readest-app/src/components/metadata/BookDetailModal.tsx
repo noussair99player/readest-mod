@@ -15,6 +15,7 @@ import { isAbsOfflineCapable } from '@/utils/audiobook';
 import { isWebAppPlatform } from '@/services/environment';
 import DeleteConfirmAlert from '@/components/DeleteConfirmAlert';
 import Dialog from '@/components/Dialog';
+import { useBookReadingStats } from '@/hooks/useBookReadingStats';
 import BookDetailView from './BookDetailView';
 import BookDetailEdit from './BookDetailEdit';
 import SourceSelector from './SourceSelector';
@@ -76,6 +77,7 @@ const BookDetailModal: React.FC<BookDetailModalProps> = ({
   // save, so the details view tracks the saved book locally to refresh its
   // cover/title/author immediately (otherwise it shows the stale prop).
   const [displayBook, setDisplayBook] = useState<Book>(book);
+  const readingStats = useBookReadingStats(book);
 
   // Initialize metadata edit hook
   const {
@@ -283,6 +285,7 @@ const BookDetailModal: React.FC<BookDetailModalProps> = ({
                 book={displayBook}
                 metadata={bookMeta}
                 fileSize={fileSize}
+                readingStats={readingStats}
                 shareEnabled={shareEnabled}
                 onEdit={handleBookMetadataUpdate ? handleEditMetadata : undefined}
                 onDelete={handleBookDelete ? handleDelete : undefined}

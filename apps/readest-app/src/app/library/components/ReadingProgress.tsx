@@ -10,6 +10,9 @@ import {
   formatTimeLeft,
 } from '../utils/libraryUtils';
 import { useMedianPageDurationSecs } from '@/hooks/useMedianPageDurationSecs';
+import { useBookReadingSeconds } from '@/hooks/useBookReadingStats';
+import { useSettingsStore } from '@/store/settingsStore';
+import { formatReadingTime } from '@/utils/time';
 
 interface ReadingProgressProps {
   book: Book;
@@ -21,6 +24,18 @@ interface ReadingProgressProps {
 const ReadingProgress: React.FC<ReadingProgressProps> = memo(
   ({ book, showTimeRemaining, pageCount }) => {
     const _ = useTranslation();
+    const { settings } = useSettingsStore();
+    const readingSeconds = useBookReadingSeconds(book);
+    const timeMode = settings.libraryReadingTimeDisplay ?? 'auto';
+    const timeLabel = formatReadingTime(readingSeconds, timeMode);
+    const clock = timeLabel && (
+      <span
+        className='text-neutral-content/70 shrink-0 whitespace-nowrap text-xs'
+        title={_('Total reading time')}
+      >
+        {timeLabel}
+      </span>
+    );
     const progressPercentage = useMemo(() => getProgressPercentage(book), [book]);
     const medianPageDurationSecs = useMedianPageDurationSecs(book.hash) ?? undefined;
     const minutes = getDisplayedTimeRemaining(book, medianPageDurationSecs);
@@ -38,6 +53,7 @@ const ReadingProgress: React.FC<ReadingProgressProps> = memo(
         <div className='flex min-w-0 items-center justify-start gap-2'>
           <StatusBadge status={book.readingStatus}>{_('Finished')}</StatusBadge>
           {pages}
+          {clock && <span className='ms-auto'>{clock}</span>}
         </div>
       );
     }
@@ -53,6 +69,7 @@ const ReadingProgress: React.FC<ReadingProgressProps> = memo(
             <span>{progressPercentage}%</span>
           )}
           {pages}
+          {clock}
         </div>
       );
     }
@@ -82,6 +99,7 @@ const ReadingProgress: React.FC<ReadingProgressProps> = memo(
       >
         <span className='truncate'>{progressLabel}</span>
         {pages}
+        {clock}
       </div>
     );
   },
