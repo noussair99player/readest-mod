@@ -232,7 +232,7 @@ export const DEFAULT_SYSTEM_SETTINGS: Partial<SystemSettings> = {
   alwaysOnTop: false,
   openBookInNewWindow: true,
   alwaysShowStatusBar: false,
-  autoCheckUpdates: true,
+  autoCheckUpdates: false,
   updateChannel: 'stable',
   screenWakeLock: false,
   autohideCursor: true,

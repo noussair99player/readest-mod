@@ -46,9 +46,9 @@ mod tests {
     #[test]
     fn matches_the_single_instance_plugin_naming() {
         assert_eq!(
-            dbus_name_and_path("com.bilingify.readest"),
+            dbus_name_and_path("com.local.readestmod"),
             (
-                "com.bilingify.readest.SingleInstance".to_string(),
+                "com.local.readestmod.SingleInstance".to_string(),
                 "/com/bilingify/readest/SingleInstance".to_string()
             )
         );
