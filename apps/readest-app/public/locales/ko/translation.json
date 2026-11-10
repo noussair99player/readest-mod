@@ -2753,5 +2753,13 @@
   "Books uploaded": "업로드한 책",
   "Reset Counts": "횟수 초기화",
   "Reset the counts and sync history on this device?": "이 기기의 횟수와 동기화 기록을 초기화할까요?",
-  "Folder not available": "폴더를 사용할 수 없음"
+  "Folder not available": "폴더를 사용할 수 없음",
+  "Total reading time": "총 독서 시간",
+  "Auto (0M, 1H5M)": "자동 (0M, 1H5M)",
+  "Minutes only": "분만 표시",
+  "Hours only": "시간만 표시",
+  "Hidden": "숨김",
+  "Reading time...": "독서 시간...",
+  "Pages per hour": "시간당 페이지",
+  "Chapters per hour (est.)": "시간당 챕터 (추정)"
 }

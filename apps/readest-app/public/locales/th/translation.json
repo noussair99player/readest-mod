@@ -2753,5 +2753,13 @@
   "Books uploaded": "หนังสือที่อัปโหลด",
   "Reset Counts": "รีเซ็ตจำนวน",
   "Reset the counts and sync history on this device?": "รีเซ็ตจำนวนและประวัติการซิงค์บนอุปกรณ์นี้หรือไม่",
-  "Folder not available": "โฟลเดอร์ไม่พร้อมใช้งาน"
+  "Folder not available": "โฟลเดอร์ไม่พร้อมใช้งาน",
+  "Total reading time": "เวลาอ่านทั้งหมด",
+  "Auto (0M, 1H5M)": "อัตโนมัติ (0M, 1H5M)",
+  "Minutes only": "นาทีเท่านั้น",
+  "Hours only": "ชั่วโมงเท่านั้น",
+  "Hidden": "ซ่อนไว้",
+  "Reading time...": "เวลาอ่าน...",
+  "Pages per hour": "หน้าต่อชั่วโมง",
+  "Chapters per hour (est.)": "บทต่อชั่วโมง (โดยประมาณ)"
 }

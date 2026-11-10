@@ -2826,5 +2826,13 @@
   "Books uploaded": "Yüklenen kitaplar",
   "Reset Counts": "Sayaçları Sıfırla",
   "Reset the counts and sync history on this device?": "Bu cihazdaki sayaçlar ve eşitleme geçmişi sıfırlansın mı?",
-  "Folder not available": "Klasör kullanılamıyor"
+  "Folder not available": "Klasör kullanılamıyor",
+  "Total reading time": "Toplam okuma süresi",
+  "Auto (0M, 1H5M)": "Otomatik (0M, 1H5M)",
+  "Minutes only": "Yalnızca dakika",
+  "Hours only": "Yalnızca saat",
+  "Hidden": "Gizli",
+  "Reading time...": "Okuma süresi...",
+  "Pages per hour": "Saatte sayfa",
+  "Chapters per hour (est.)": "Saatte bölüm (tahmini)"
 }

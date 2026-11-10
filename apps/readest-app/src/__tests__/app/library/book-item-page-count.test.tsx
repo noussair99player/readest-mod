@@ -54,7 +54,7 @@ describe('page count under the title of library books (#6909)', () => {
     );
     const pages = screen.getByText('412 pages');
     expect(screen.getByText('50%').parentElement).toBe(pages.parentElement);
-    expect(pages.parentElement!.textContent).toBe('50%412 pages');
+    expect(pages.parentElement!.textContent).toBe('50%412 pages0M');
   });
 
   it('sits beside the Finished badge', () => {

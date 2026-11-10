@@ -2972,5 +2972,13 @@
   "Books uploaded": "Загруженные книги",
   "Reset Counts": "Сбросить счётчики",
   "Reset the counts and sync history on this device?": "Сбросить счётчики и историю синхронизации на этом устройстве?",
-  "Folder not available": "Папка недоступна"
+  "Folder not available": "Папка недоступна",
+  "Total reading time": "Общее время чтения",
+  "Auto (0M, 1H5M)": "Авто (0M, 1H5M)",
+  "Minutes only": "Только минуты",
+  "Hours only": "Только часы",
+  "Hidden": "Скрыто",
+  "Reading time...": "Время чтения...",
+  "Pages per hour": "Страниц в час",
+  "Chapters per hour (est.)": "Глав в час (оценка)"
 }

@@ -2826,5 +2826,13 @@
   "Books uploaded": "பதிவேற்றிய புத்தகங்கள்",
   "Reset Counts": "எண்ணிக்கையை மீட்டமை",
   "Reset the counts and sync history on this device?": "இந்தச் சாதனத்தில் எண்ணிக்கைகளையும் ஒத்திசைவு வரலாற்றையும் மீட்டமைக்கவா?",
-  "Folder not available": "கோப்புறை கிடைக்கவில்லை"
+  "Folder not available": "கோப்புறை கிடைக்கவில்லை",
+  "Total reading time": "மொத்த வாசிப்பு நேரம்",
+  "Auto (0M, 1H5M)": "தானியங்கி (0M, 1H5M)",
+  "Minutes only": "நிமிடங்கள் மட்டும்",
+  "Hours only": "மணிநேரங்கள் மட்டும்",
+  "Hidden": "மறைக்கப்பட்டது",
+  "Reading time...": "வாசிப்பு நேரம்...",
+  "Pages per hour": "மணிக்கு பக்கங்கள்",
+  "Chapters per hour (est.)": "மணிக்கு அத்தியாயங்கள் (மதிப்பீடு)"
 }

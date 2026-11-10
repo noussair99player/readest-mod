@@ -2972,5 +2972,13 @@
   "Books uploaded": "Przesłane książki",
   "Reset Counts": "Resetuj liczniki",
   "Reset the counts and sync history on this device?": "Zresetować liczniki i historię synchronizacji na tym urządzeniu?",
-  "Folder not available": "Folder niedostępny"
+  "Folder not available": "Folder niedostępny",
+  "Total reading time": "Łączny czas czytania",
+  "Auto (0M, 1H5M)": "Automatyczny (0M, 1H5M)",
+  "Minutes only": "Tylko minuty",
+  "Hours only": "Tylko godziny",
+  "Hidden": "Ukryty",
+  "Reading time...": "Czas czytania...",
+  "Pages per hour": "Stron na godzinę",
+  "Chapters per hour (est.)": "Rozdziałów na godzinę (szac.)"
 }

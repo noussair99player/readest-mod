@@ -2826,5 +2826,13 @@
   "Books uploaded": "Feltöltött könyvek",
   "Reset Counts": "Számlálók nullázása",
   "Reset the counts and sync history on this device?": "Nullázza a számlálókat és a szinkronizálási előzményeket ezen az eszközön?",
-  "Folder not available": "A mappa nem érhető el"
+  "Folder not available": "A mappa nem érhető el",
+  "Total reading time": "Teljes olvasási idő",
+  "Auto (0M, 1H5M)": "Automatikus (0M, 1H5M)",
+  "Minutes only": "Csak perc",
+  "Hours only": "Csak óra",
+  "Hidden": "Rejtett",
+  "Reading time...": "Olvasási idő...",
+  "Pages per hour": "Oldal óránként",
+  "Chapters per hour (est.)": "Fejezet óránként (becsült)"
 }

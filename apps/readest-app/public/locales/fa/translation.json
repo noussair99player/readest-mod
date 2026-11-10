@@ -2826,5 +2826,13 @@
   "Books uploaded": "کتاب‌های بارگذاری‌شده",
   "Reset Counts": "بازنشانی شمارش‌ها",
   "Reset the counts and sync history on this device?": "شمارش‌ها و تاریخچه همگام‌سازی در این دستگاه بازنشانی شوند؟",
-  "Folder not available": "پوشه در دسترس نیست"
+  "Folder not available": "پوشه در دسترس نیست",
+  "Total reading time": "کل زمان مطالعه",
+  "Auto (0M, 1H5M)": "خودکار (0M, 1H5M)",
+  "Minutes only": "فقط دقیقه",
+  "Hours only": "فقط ساعت",
+  "Hidden": "پنهان",
+  "Reading time...": "زمان مطالعه...",
+  "Pages per hour": "صفحه در ساعت",
+  "Chapters per hour (est.)": "فصل در ساعت (تخمینی)"
 }

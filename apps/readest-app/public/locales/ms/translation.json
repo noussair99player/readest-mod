@@ -2753,5 +2753,13 @@
   "Books uploaded": "Buku dimuat naik",
   "Reset Counts": "Tetapkan Semula Kiraan",
   "Reset the counts and sync history on this device?": "Tetapkan semula kiraan dan sejarah penyegerakan pada peranti ini?",
-  "Folder not available": "Folder tidak tersedia"
+  "Folder not available": "Folder tidak tersedia",
+  "Total reading time": "Jumlah masa membaca",
+  "Auto (0M, 1H5M)": "Automatik (0M, 1H5M)",
+  "Minutes only": "Minit sahaja",
+  "Hours only": "Jam sahaja",
+  "Hidden": "Tersembunyi",
+  "Reading time...": "Masa membaca...",
+  "Pages per hour": "Halaman sejam",
+  "Chapters per hour (est.)": "Bab sejam (anggaran)"
 }

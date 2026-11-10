@@ -2972,5 +2972,13 @@
   "Books uploaded": "Naložene knjige",
   "Reset Counts": "Ponastavi števce",
   "Reset the counts and sync history on this device?": "Želite ponastaviti števce in zgodovino sinhronizacije v tej napravi?",
-  "Folder not available": "Mapa ni na voljo"
+  "Folder not available": "Mapa ni na voljo",
+  "Total reading time": "Skupni čas branja",
+  "Auto (0M, 1H5M)": "Samodejno (0M, 1H5M)",
+  "Minutes only": "Samo minute",
+  "Hours only": "Samo ure",
+  "Hidden": "Skrito",
+  "Reading time...": "Čas branja...",
+  "Pages per hour": "Strani na uro",
+  "Chapters per hour (est.)": "Poglavij na uro (ocena)"
 }

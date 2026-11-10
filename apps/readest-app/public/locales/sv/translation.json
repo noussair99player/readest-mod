@@ -2826,5 +2826,13 @@
   "Books uploaded": "Uppladdade böcker",
   "Reset Counts": "Nollställ räknare",
   "Reset the counts and sync history on this device?": "Nollställ räknare och synkroniseringshistorik på den här enheten?",
-  "Folder not available": "Mappen är inte tillgänglig"
+  "Folder not available": "Mappen är inte tillgänglig",
+  "Total reading time": "Total lästid",
+  "Auto (0M, 1H5M)": "Automatisk (0M, 1H5M)",
+  "Minutes only": "Endast minuter",
+  "Hours only": "Endast timmar",
+  "Hidden": "Dold",
+  "Reading time...": "Lästid...",
+  "Pages per hour": "Sidor per timme",
+  "Chapters per hour (est.)": "Kapitel per timme (uppskattat)"
 }

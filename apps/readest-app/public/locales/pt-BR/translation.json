@@ -2899,5 +2899,13 @@
   "Books uploaded": "Livros enviados",
   "Reset Counts": "Redefinir contagens",
   "Reset the counts and sync history on this device?": "Redefinir as contagens e o histórico de sincronização neste dispositivo?",
-  "Folder not available": "Pasta indisponível"
+  "Folder not available": "Pasta indisponível",
+  "Total reading time": "Tempo total de leitura",
+  "Auto (0M, 1H5M)": "Automático (0M, 1H5M)",
+  "Minutes only": "Apenas minutos",
+  "Hours only": "Apenas horas",
+  "Hidden": "Oculto",
+  "Reading time...": "Tempo de leitura...",
+  "Pages per hour": "Páginas por hora",
+  "Chapters per hour (est.)": "Capítulos por hora (est.)"
 }

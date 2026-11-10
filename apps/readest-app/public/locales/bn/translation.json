@@ -2826,5 +2826,13 @@
   "Books uploaded": "আপলোড করা বই",
   "Reset Counts": "গণনা রিসেট করুন",
   "Reset the counts and sync history on this device?": "এই ডিভাইসের গণনা ও সিঙ্ক ইতিহাস রিসেট করবেন?",
-  "Folder not available": "ফোল্ডার উপলব্ধ নেই"
+  "Folder not available": "ফোল্ডার উপলব্ধ নেই",
+  "Total reading time": "মোট পড়ার সময়",
+  "Auto (0M, 1H5M)": "স্বয়ংক্রিয় (0M, 1H5M)",
+  "Minutes only": "শুধু মিনিট",
+  "Hours only": "শুধু ঘণ্টা",
+  "Hidden": "লুকানো",
+  "Reading time...": "পড়ার সময়...",
+  "Pages per hour": "প্রতি ঘণ্টায় পৃষ্ঠা",
+  "Chapters per hour (est.)": "প্রতি ঘণ্টায় অধ্যায় (আনুমানিক)"
 }

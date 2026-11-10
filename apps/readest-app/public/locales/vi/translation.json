@@ -2753,5 +2753,13 @@
   "Books uploaded": "Sách đã tải lên",
   "Reset Counts": "Đặt lại số liệu",
   "Reset the counts and sync history on this device?": "Đặt lại số liệu và lịch sử đồng bộ trên thiết bị này?",
-  "Folder not available": "Thư mục không khả dụng"
+  "Folder not available": "Thư mục không khả dụng",
+  "Total reading time": "Tổng thời gian đọc",
+  "Auto (0M, 1H5M)": "Tự động (0M, 1H5M)",
+  "Minutes only": "Chỉ phút",
+  "Hours only": "Chỉ giờ",
+  "Hidden": "Ẩn",
+  "Reading time...": "Thời gian đọc...",
+  "Pages per hour": "Số trang mỗi giờ",
+  "Chapters per hour (est.)": "Số chương mỗi giờ (ước tính)"
 }

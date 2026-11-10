@@ -2899,5 +2899,13 @@
   "Books uploaded": "ספרים שהועלו",
   "Reset Counts": "איפוס ספירות",
   "Reset the counts and sync history on this device?": "לאפס את הספירות ואת היסטוריית הסנכרון במכשיר הזה?",
-  "Folder not available": "התיקייה אינה זמינה"
+  "Folder not available": "התיקייה אינה זמינה",
+  "Total reading time": "סך זמן הקריאה",
+  "Auto (0M, 1H5M)": "אוטומטי (0M, 1H5M)",
+  "Minutes only": "דקות בלבד",
+  "Hours only": "שעות בלבד",
+  "Hidden": "מוסתר",
+  "Reading time...": "זמן קריאה...",
+  "Pages per hour": "עמודים לשעה",
+  "Chapters per hour (est.)": "פרקים לשעה (משוער)"
 }

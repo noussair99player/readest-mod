@@ -2972,5 +2972,13 @@
   "Books uploaded": "Вивантажені книги",
   "Reset Counts": "Скинути лічильники",
   "Reset the counts and sync history on this device?": "Скинути лічильники та історію синхронізації на цьому пристрої?",
-  "Folder not available": "Папка недоступна"
+  "Folder not available": "Папка недоступна",
+  "Total reading time": "Загальний час читання",
+  "Auto (0M, 1H5M)": "Авто (0M, 1H5M)",
+  "Minutes only": "Лише хвилини",
+  "Hours only": "Лише години",
+  "Hidden": "Приховано",
+  "Reading time...": "Час читання...",
+  "Pages per hour": "Сторінок на годину",
+  "Chapters per hour (est.)": "Розділів на годину (оцінка)"
 }

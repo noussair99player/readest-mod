@@ -2899,5 +2899,13 @@
   "Books uploaded": "Cărți încărcate",
   "Reset Counts": "Resetează contoarele",
   "Reset the counts and sync history on this device?": "Resetezi contoarele și istoricul sincronizării pe acest dispozitiv?",
-  "Folder not available": "Dosar indisponibil"
+  "Folder not available": "Dosar indisponibil",
+  "Total reading time": "Timp total de citire",
+  "Auto (0M, 1H5M)": "Automat (0M, 1H5M)",
+  "Minutes only": "Doar minute",
+  "Hours only": "Doar ore",
+  "Hidden": "Ascuns",
+  "Reading time...": "Timp de citire...",
+  "Pages per hour": "Pagini pe oră",
+  "Chapters per hour (est.)": "Capitole pe oră (est.)"
 }

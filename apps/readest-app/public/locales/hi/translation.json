@@ -2826,5 +2826,13 @@
   "Books uploaded": "अपलोड की गई पुस्तकें",
   "Reset Counts": "गिनती रीसेट करें",
   "Reset the counts and sync history on this device?": "इस डिवाइस की गिनती और सिंक इतिहास रीसेट करें?",
-  "Folder not available": "फ़ोल्डर उपलब्ध नहीं है"
+  "Folder not available": "फ़ोल्डर उपलब्ध नहीं है",
+  "Total reading time": "कुल पढ़ने का समय",
+  "Auto (0M, 1H5M)": "स्वतः (0M, 1H5M)",
+  "Minutes only": "केवल मिनट",
+  "Hours only": "केवल घंटे",
+  "Hidden": "छिपा हुआ",
+  "Reading time...": "पढ़ने का समय...",
+  "Pages per hour": "पृष्ठ प्रति घंटा",
+  "Chapters per hour (est.)": "अध्याय प्रति घंटा (अनुमानित)"
 }

@@ -3118,5 +3118,13 @@
   "Books uploaded": "الكتب التي تم رفعها",
   "Reset Counts": "إعادة تعيين العدادات",
   "Reset the counts and sync history on this device?": "هل تريد إعادة تعيين العدادات وسجل المزامنة على هذا الجهاز؟",
-  "Folder not available": "المجلد غير متاح"
+  "Folder not available": "المجلد غير متاح",
+  "Total reading time": "إجمالي وقت القراءة",
+  "Auto (0M, 1H5M)": "تلقائي (0M, 1H5M)",
+  "Minutes only": "الدقائق فقط",
+  "Hours only": "الساعات فقط",
+  "Hidden": "مخفي",
+  "Reading time...": "وقت القراءة...",
+  "Pages per hour": "الصفحات في الساعة",
+  "Chapters per hour (est.)": "الفصول في الساعة (تقديري)"
 }

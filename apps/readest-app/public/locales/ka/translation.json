@@ -2826,5 +2826,13 @@
   "Books uploaded": "ატვირთული წიგნები",
   "Reset Counts": "მრიცხველების გადატვირთვა",
   "Reset the counts and sync history on this device?": "გადაიტვირთოს მრიცხველები და სინქრონიზაციის ისტორია ამ მოწყობილობაზე?",
-  "Folder not available": "საქაღალდე მიუწვდომელია"
+  "Folder not available": "საქაღალდე მიუწვდომელია",
+  "Total reading time": "კითხვის საერთო დრო",
+  "Auto (0M, 1H5M)": "ავტომატური (0M, 1H5M)",
+  "Minutes only": "მხოლოდ წუთები",
+  "Hours only": "მხოლოდ საათები",
+  "Hidden": "დამალული",
+  "Reading time...": "კითხვის დრო...",
+  "Pages per hour": "გვერდი საათში",
+  "Chapters per hour (est.)": "თავი საათში (სავარაუდო)"
 }

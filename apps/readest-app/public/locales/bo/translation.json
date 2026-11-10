@@ -2753,5 +2753,13 @@
   "Books uploaded": "ཡར་སྐྱེལ་བྱས་པའི་དཔེ་ཆ།",
   "Reset Counts": "གྲངས་ཚད་བསྐྱར་སྒྲིག",
   "Reset the counts and sync history on this device?": "སྒྲིག་ཆས་འདིའི་གྲངས་ཚད་དང་མཉམ་སྡེབ་ལོ་རྒྱུས་བསྐྱར་སྒྲིག་བྱེད་དམ།",
-  "Folder not available": "ཡིག་སྣོད་མི་རག"
+  "Folder not available": "ཡིག་སྣོད་མི་རག",
+  "Total reading time": "ཀློག་དུས་ཡོངས་བསྡོམས།",
+  "Auto (0M, 1H5M)": "རང་འགུལ། (0M, 1H5M)",
+  "Minutes only": "སྐར་མ་གཅིག་པུ།",
+  "Hours only": "ཆུ་ཚོད་གཅིག་པུ།",
+  "Hidden": "སྦས་ཡོད།",
+  "Reading time...": "ཀློག་དུས་...",
+  "Pages per hour": "ཆུ་ཚོད་རེའི་ཤོག་ངོས།",
+  "Chapters per hour (est.)": "ཆུ་ཚོད་རེའི་ལེའུ་ (ཚོད་དཔག)"
 }

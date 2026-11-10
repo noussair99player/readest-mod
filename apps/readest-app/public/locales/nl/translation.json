@@ -2826,5 +2826,13 @@
   "Books uploaded": "Geüploade boeken",
   "Reset Counts": "Tellers resetten",
   "Reset the counts and sync history on this device?": "Tellers en synchronisatiegeschiedenis op dit apparaat resetten?",
-  "Folder not available": "Map niet beschikbaar"
+  "Folder not available": "Map niet beschikbaar",
+  "Total reading time": "Totale leestijd",
+  "Auto (0M, 1H5M)": "Automatisch (0M, 1H5M)",
+  "Minutes only": "Alleen minuten",
+  "Hours only": "Alleen uren",
+  "Hidden": "Verborgen",
+  "Reading time...": "Leestijd...",
+  "Pages per hour": "Pagina's per uur",
+  "Chapters per hour (est.)": "Hoofdstukken per uur (geschat)"
 }

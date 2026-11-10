@@ -2899,5 +2899,13 @@
   "Books uploaded": "Libri caricati",
   "Reset Counts": "Azzera conteggi",
   "Reset the counts and sync history on this device?": "Azzerare i conteggi e la cronologia di sincronizzazione su questo dispositivo?",
-  "Folder not available": "Cartella non disponibile"
+  "Folder not available": "Cartella non disponibile",
+  "Total reading time": "Tempo totale di lettura",
+  "Auto (0M, 1H5M)": "Automatico (0M, 1H5M)",
+  "Minutes only": "Solo minuti",
+  "Hours only": "Solo ore",
+  "Hidden": "Nascosto",
+  "Reading time...": "Tempo di lettura...",
+  "Pages per hour": "Pagine all'ora",
+  "Chapters per hour (est.)": "Capitoli all'ora (stima)"
 }

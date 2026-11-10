@@ -97,10 +97,10 @@ describe('Behavior update settings reset', () => {
 
     await act(async () => registerReset.mock.calls[0]![0]());
 
-    expect.soft(autoCheckSwitch().checked).toBe(true);
+    expect.soft(autoCheckSwitch().checked).toBe(false);
     expect.soft(nightlySwitch().checked).toBe(false);
     expect.soft(savedSettings()).toMatchObject({
-      autoCheckUpdates: true,
+      autoCheckUpdates: false,
       updateChannel: 'stable',
       telemetryEnabled: false,
       gamepadEnabled: false,
@@ -109,7 +109,7 @@ describe('Behavior update settings reset', () => {
     panel.unmount();
     useSettingsStore.setState({ settings: savedSettings() });
     render(<ControlPanel bookKey='' onRegisterReset={() => {}} />);
-    expect(autoCheckSwitch().checked).toBe(true);
+    expect(autoCheckSwitch().checked).toBe(false);
     expect(nightlySwitch().checked).toBe(false);
   });
 
@@ -132,9 +132,9 @@ describe('Behavior update settings reset', () => {
     await act(async () => registerReset.mock.calls[0]![0]());
     await act(async () => registerReset.mock.calls[0]![0]());
 
-    expect(autoCheckSwitch().checked).toBe(true);
+    expect(autoCheckSwitch().checked).toBe(false);
     expect(nightlySwitch().checked).toBe(false);
-    expect(savedSettings()).toMatchObject({ autoCheckUpdates: true, updateChannel: 'stable' });
+    expect(savedSettings()).toMatchObject({ autoCheckUpdates: false, updateChannel: 'stable' });
   });
 
   it('leaves update preferences alone when the app has no updater', async () => {

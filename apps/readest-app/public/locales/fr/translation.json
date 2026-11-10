@@ -2899,5 +2899,13 @@
   "Books uploaded": "Livres envoyés sur le serveur",
   "Reset Counts": "Réinitialiser les compteurs",
   "Reset the counts and sync history on this device?": "Réinitialiser les compteurs et l'historique de synchronisation sur cet appareil ?",
-  "Folder not available": "Dossier indisponible"
+  "Folder not available": "Dossier indisponible",
+  "Total reading time": "Temps de lecture total",
+  "Auto (0M, 1H5M)": "Automatique (0M, 1H5M)",
+  "Minutes only": "Minutes uniquement",
+  "Hours only": "Heures uniquement",
+  "Hidden": "Masqué",
+  "Reading time...": "Temps de lecture...",
+  "Pages per hour": "Pages par heure",
+  "Chapters per hour (est.)": "Chapitres par heure (est.)"
 }

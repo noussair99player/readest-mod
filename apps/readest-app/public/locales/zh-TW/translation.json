@@ -2753,5 +2753,13 @@
   "Books uploaded": "已上傳書籍",
   "Reset Counts": "重設計數",
   "Reset the counts and sync history on this device?": "要重設此裝置上的計數和同步紀錄嗎？",
-  "Folder not available": "資料夾無法使用"
+  "Folder not available": "資料夾無法使用",
+  "Total reading time": "總閱讀時長",
+  "Auto (0M, 1H5M)": "自動 (0M, 1H5M)",
+  "Minutes only": "僅分鐘",
+  "Hours only": "僅小時",
+  "Hidden": "隱藏",
+  "Reading time...": "閱讀時長...",
+  "Pages per hour": "每小時頁數",
+  "Chapters per hour (est.)": "每小時章節數（估算）"
 }

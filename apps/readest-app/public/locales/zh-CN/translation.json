@@ -2753,5 +2753,13 @@
   "Books uploaded": "已上传书籍",
   "Reset Counts": "重置计数",
   "Reset the counts and sync history on this device?": "要重置此设备上的计数和同步记录吗？",
-  "Folder not available": "文件夹不可用"
+  "Folder not available": "文件夹不可用",
+  "Total reading time": "总阅读时长",
+  "Auto (0M, 1H5M)": "自动 (0M, 1H5M)",
+  "Minutes only": "仅分钟",
+  "Hours only": "仅小时",
+  "Hidden": "隐藏",
+  "Reading time...": "阅读时长...",
+  "Pages per hour": "每小时页数",
+  "Chapters per hour (est.)": "每小时章节数（估算）"
 }

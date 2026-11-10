@@ -2753,5 +2753,13 @@
   "Books uploaded": "アップロードした本",
   "Reset Counts": "カウントをリセット",
   "Reset the counts and sync history on this device?": "このデバイスのカウントと同期履歴をリセットしますか？",
-  "Folder not available": "フォルダーを利用できません"
+  "Folder not available": "フォルダーを利用できません",
+  "Total reading time": "合計読書時間",
+  "Auto (0M, 1H5M)": "自動 (0M, 1H5M)",
+  "Minutes only": "分のみ",
+  "Hours only": "時間のみ",
+  "Hidden": "非表示",
+  "Reading time...": "読書時間...",
+  "Pages per hour": "1時間あたりのページ数",
+  "Chapters per hour (est.)": "1時間あたりの章数（推定）"
 }
