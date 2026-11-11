@@ -71,26 +71,21 @@ jobs:
           echo "NEXT_PUBLIC_APP_PLATFORM=tauri" >> .env.local
           cp .env.local apps/readest-app/.env.local
 
-      - name: decode signing key
+      - name: check signing secrets are set
         env:
           ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
-          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
         run: |
           if [ -z "$ANDROID_KEYSTORE_BASE64" ]; then
             echo "::error::Repo secrets ANDROID_KEYSTORE_BASE64 / ANDROID_KEYSTORE_PASSWORD / ANDROID_KEY_ALIAS are not set — see the keystore setup instructions. Falling back is not possible: a release build needs a signing key."
             exit 1
           fi
-          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > "$PWD/readestmod-release.keystore"
-          cat > "$PWD/keystore.properties" <<EOF
-          keyAlias=$ANDROID_KEY_ALIAS
-          password=$ANDROID_KEYSTORE_PASSWORD
-          storeFile=$PWD/readestmod-release.keystore
-          EOF
 
       - name: build release APK (aarch64)
         env:
           NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/28.2.13676358
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
         run: |
           cd apps/readest-app
           # Only the customized files of gen/android are tracked — regenerate
@@ -100,10 +95,19 @@ jobs:
           pnpm tauri android init
           pnpm tauri icon ../../data/icons/readest-book.png
           git checkout .
+          # keystore.properties must exist *inside* gen/android: that's the
+          # Gradle project root (its own settings.gradle.kts), not the repo
+          # root -- build.gradle.kts's rootProject.file("keystore.properties")
+          # resolves there. It's written here, after the regenerate-and-
+          # restore above, since that `rm -rf` would otherwise wipe it.
+          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > "$PWD/src-tauri/gen/android/readestmod-release.keystore"
+          cat > "$PWD/src-tauri/gen/android/keystore.properties" <<EOF
+          keyAlias=$ANDROID_KEY_ALIAS
+          password=$ANDROID_KEYSTORE_PASSWORD
+          storeFile=$PWD/src-tauri/gen/android/readestmod-release.keystore
+          EOF
           # Release build: optimized, R8-shrunk, native debug symbols
-          # stripped (see build.gradle.kts's debug/release buildTypes) —
-          # signed with the self-signed key decoded above (keystore.properties
-          # at the repo root; build.gradle.kts picks it up automatically).
+          # stripped (see build.gradle.kts's debug/release buildTypes).
           pnpm tauri android build --target aarch64
           APK=$(find src-tauri/gen/android/app/build/outputs/apk -name '*release*.apk' ! -name '*unsigned*' | head -n 1)
           echo "APK=$PWD/$APK" >> "$GITHUB_ENV"
